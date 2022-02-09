@@ -16,22 +16,53 @@ body {
   margin: 0;
 }
 
+label {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px !important;
+}
+
+p.text {
+  margin-top: 5px;
+}
+
+p.text span {
+  color:rgb(255, 0, 242)
+}
+
 .container {
-  perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 800px;
   margin-bottom: 30px;
 }
 
 .screen {
   background-color: #fff;
-  height: 70px;
+  height: 125px;
   width: 100%;
+  padding: 100px 150px;
   margin: 15px 0;
+  border-radius: 3px;
   transform: rotateX(-45deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
 .movie-container {
   margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-container label {
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px 8px;
+  border-radius: 5px;
 }
 
 .showcase {
@@ -56,10 +87,21 @@ body {
 }
 
 .seat {
-  background-color: #444451;
+  background-color: #fff;
   height: 12px;
   width: 15px;
-  margin: 3px;
+  margin: 5px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+}
+
+.occupied {
+  background-color: #444451;
+}
+
+.selected {
+  background-color: rgb(255, 0, 242);
 }
