@@ -7,15 +7,19 @@ const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 let ticketPrice = +movieSelect.value;
 
-/** updates total & count */
+/** updates user's total number of tickets & cost */
 function updateSelectedCount() {
   const selectedSeats = document.querySelectorAll('.row .seat.selected');
-
   const selectedSeatsCount = selectedSeats.length;
 
   count.innerText = selectedSeatsCount;
   total.innerText = selectedSeatsCount * ticketPrice;
 }
+
+/** changes ticketPrice to the selected movie's ticket price */
+movieSelect.addEventListener("change", (event) => {
+    ticketPrice = +event.target.value;
+})
 
 /** event handler for changing an unoccupied seat's class to `selected` if the user clicks on it */
 container.addEventListener('click', event => {
@@ -28,6 +32,3 @@ container.addEventListener('click', event => {
     updateSelectedCount();
   }
 });
-
-// Initial count and total set
-updateSelectedCount();
