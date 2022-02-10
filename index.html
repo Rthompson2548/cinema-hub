@@ -11,22 +11,19 @@
 
 <body>
     <div class="movie-container">
-        <label>Featured Movies</label>
-
+        <label>Pick a movie:</label>
         <select id="movie">
-            <option class="option-title" disabled selected value><p>Select a Movie</p></option>
             <option value="10">Avengers: Endgame ($10)</option>
             <option value="12">Joker ($12)</option>
             <option value="8">Toy Story 4 ($8)</option>
             <option value="9">The Lion King ($9)</option>
         </select>
-
     </div>
 
     <ul class="showcase">
         <li>
             <div class="seat"></div>
-            <small>Available</small>
+            <small>N/A</small>
         </li>
         <li>
             <div class="seat selected"></div>
@@ -39,7 +36,6 @@
     </ul>
 
     <div class="container">
-        
         <div class="screen"></div>
 
         <div class="row">
@@ -105,11 +101,7 @@
     </div>
 
     <p class="text">
-        You have selected
-        <span id="count">0</span>
-        seats for a price of
-        <span>$</span>
-        <span id="total">0</span>
+        You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
     </p>
 
     <script src="script.js"></script>
