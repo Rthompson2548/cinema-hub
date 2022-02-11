@@ -16,7 +16,7 @@ function setMovieData(movieIndex, moviePrice) {
 }
 
 /** updates user's total number of tickets & cost */
-function updateSelectedCount() {
+function updateOrder() {
   /** stores all seats that have the `selected` class on them */
   const selectedSeats = document.querySelectorAll('.row .seat.selected');
 
@@ -53,8 +53,7 @@ function populateUI() {
   /** checks if the movie's index is already in the current localStorage */
   if (selectedMovieIndex !== null) {
     /** sets the movie into localStorage permanently */
-    movieSelect.selectedIndex === selectedMovieIndex;
-    movieSelect.innerText = movieSelect;
+    movieSelect.selectedIndex = selectedMovieIndex;
   }
 };
 
@@ -62,7 +61,8 @@ function populateUI() {
 /** changes ticketPrice to the selected movie's ticket price */
 movieSelect.addEventListener("change", (event) => {
   ticketPrice = +event.target.value;
-  setMovieData(`current movie: ${event.target.selectedIndex} ${event.target.value}`);
+  setMovieData(event.target.selectedIndex, event.target.value);
+  updateOrder();
 })
 
 /** event handler for changing an unoccupied seat's class to `selected` if the user clicks on it */
@@ -74,10 +74,10 @@ container.addEventListener('click', event => {
     /** uses `toggle` to select/deselect the seat class on click */
     event.target.classList.toggle('selected');
 
-    updateSelectedCount();
+    updateOrder();
   }
 });
 
 
 /** sets the initial user's count and total */
-updateSelectedCount();
+updateOrder();

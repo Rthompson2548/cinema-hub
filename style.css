@@ -27,7 +27,7 @@ p.text {
 }
 
 p.text span {
-  color: rgb(255, 0, 242);
+  color: rgb(255, 0, 242) !important;
 }
 
 .cinema-hub {
@@ -111,6 +111,6 @@ select {
 
 .order-summary {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
