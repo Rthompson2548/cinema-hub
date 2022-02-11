@@ -11,7 +11,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  /* height: 90vh; */
+  overflow: hidden;
   font-family: "Lato", sans-serif;
 }
 
@@ -20,7 +21,6 @@ label {
   font-weight: bold;
   margin-bottom: 10px !important;
 }
-
 
 p.text {
   margin-top: 5px;
@@ -34,11 +34,28 @@ p.text span {
   margin-top: 32px;
 }
 
+select {
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   perspective: 950px;
+}
+
+.featured-movie-image {
+  width: 225px;
+  height: 225px;
+  padding: 10px;
+}
+
+.featured-movie-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .screen {
@@ -58,11 +75,6 @@ p.text span {
 
 .movie-container label {
   margin-bottom: 10px;
-}
-
-select {
-  padding: 5px 8px;
-  border-radius: 5px;
 }
 
 .showcase {
