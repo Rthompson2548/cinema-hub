@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   /* height: 90vh; */
-  overflow: hidden;
+  overflow-y: scroll;
   font-family: "Lato", sans-serif;
 }
 
@@ -32,6 +32,7 @@ p.text span {
 
 .header {
   margin-top: 32px;
+  font-size: 90px;
 }
 
 select {
@@ -46,10 +47,15 @@ select {
   perspective: 950px;
 }
 
+.featured-text {
+  font-size: 50px;
+}
+
 .featured-movie-image {
-  width: 225px;
-  height: 225px;
-  padding: 10px;
+  width: 300px;
+  height: 400px;
+  padding: 24px;
+  border-radius: 30px;
 }
 
 .featured-movie-images {
