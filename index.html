@@ -12,127 +12,135 @@
 <body>
     <div class="movie-container">
 
-        <h1 class="header">Cinema Hub</h1>
-        <label class="featured-text">Featured</label>
         <div>
+            <div>
+                <h1 class="header">Cinema Hub</h1>
+                <label for="">Choose a Movie</label>
+                <select id="movie">
+                    <option value="10">Star Wars</option>
+                    <option value="12">Pulp Fiction</option>
+                    <option value="8">Avengers</option>
+                    <option value="9">The Incredibles</option>
+                    <option value="10">Spider-Man</option>
+                    <option value="12">Psycho</option>
+                    <option value="8">Jurassic Park</option>
+                    <option value="9">Jaws</option>
+                </select>
+            </div>
+
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>N/A</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+
+            <div class="container">
+                <div class="screen"></div>
+
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <p class="text">
+                <h4>Tickets:&nbsp<span id="count">0</span></h6>
+                    <h4>Admission Fee: &nbsp $<span id="total">0</span></h4>
+                    </p>
+            </div>
+        </div>
+
+        <div>
+            <label>Featured</label>
             <div class="featured-movie-images">
+            
+                <!-- <div class="featured-movie-images"> -->
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2847210.jpg" alt="">
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp7665395.jpg" alt="">
-            </div>
-            <div class="featured-movie-images">
+                <!-- </div> -->
+                <!-- <div class="featured-movie-images"> -->
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp5297073.jpg" alt="">
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2283499.jpg" alt="">
-            </div>
-
-            <div class="featured-movie-images">
+                <!-- </div> -->
+            
+                <!-- <div class="featured-movie-images"> -->
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp6988384.jpg" alt="">
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp4119896.jpg" alt="">
-            </div>
-
-            <div class="featured-movie-images">
+                <!-- </div> -->
+            
+                <!-- <div class="featured-movie-images"> -->
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2900730.jpg" alt="">
                 <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp10473769.jpg" alt="">
+                <!-- </div> -->
             </div>
-
+        </div>
+        
         </div>
 
-
-        <label for="">Choose a Movie</label>
-        <select id="movie">
-            <option value="10">Star Wars</option>
-            <option value="12">Pulp Fiction</option>
-            <option value="8">Avengers</option>
-            <option value="9">The Incredibles</option>
-            <option value="10">Spider-Man</option>
-            <option value="12">Psycho</option>
-            <option value="8">Jurassic Park</option>
-            <option value="9">Jaws</option>
-        </select>
-    </div>
-
-    <ul class="showcase">
-        <li>
-            <div class="seat"></div>
-            <small>N/A</small>
-        </li>
-        <li>
-            <div class="seat selected"></div>
-            <small>Selected</small>
-        </li>
-        <li>
-            <div class="seat occupied"></div>
-            <small>Occupied</small>
-        </li>
-    </ul>
-
-    <div class="container">
-        <div class="screen"></div>
-
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
-        </div>
-
-        <p class="text">
-        <h4>Tickets:&nbsp<span id="count">0</span></h6>
-            <h4>Admission Fee: &nbsp $<span id="total">0</span></h4>
-            </p>
     </div>
 
 
