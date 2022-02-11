@@ -42,7 +42,7 @@ function populateUI() {
       /** checks if the returned index a positive number (means that it exists) */
       if (selectedSeats.indexOf(index) > -1) {
         /** uses add() to save the seat's class into localStorage permanently */
-        seat.classList.add("selected");
+        // seat.classList.add("selected");
       }
     })
   }
@@ -81,3 +81,5 @@ container.addEventListener('click', event => {
 
 /** sets the initial user's count and total */
 updateOrder();
+
+
