@@ -5,6 +5,12 @@ const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
 populateUI();
 
 let ticketPrice = +movieSelect.value;
@@ -81,3 +87,5 @@ container.addEventListener('click', event => {
 
 /** sets the initial user's count and total */
 updateOrder();
+
+

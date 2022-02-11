@@ -11,15 +11,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   font-family: "Lato", sans-serif;
-  margin: 0;
+  margin: 12px;
 }
 
 label {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
+}
+
+
+
+option,
+option:checked {
+  font-weight: bold !important;
 }
 
 p.text {
@@ -30,6 +37,12 @@ p.text span {
   color: rgb(255, 0, 242) !important;
 }
 
+.cinema-hub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .cinema-hub {
   font-size: 52px;
 }
@@ -38,16 +51,15 @@ p.text span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  perspective: 1000px;
-  margin-bottom: 30px;
+  perspective: 600px;
 }
 
 .screen {
-  background-color: #fff;
+  background-color: rgb(230, 230, 230);
   height: 125px;
-  width: 100%;
-  padding: 100px 150px;
-  margin: 15px 0;
+  width: 200px;
+  padding: 50px 75px;
+  margin: 5px 0;
   border-radius: 3px;
   transform: rotateX(-45deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
@@ -70,10 +82,9 @@ select {
 }
 
 .showcase {
-  background: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
   border-radius: 5px;
-  color: #777;
+  color: #fff;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -111,6 +122,6 @@ select {
 
 .order-summary {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
