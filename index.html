@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1 class="cinema-hub">Cinema Hub</h1>
     <div class="movie-container">
         <label>Featured Movies</label>
         <select id="movie">
@@ -100,9 +101,12 @@
         </div>
     </div>
 
-    <p class="text">
-        You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
-    </p>
+    <div class="order-summary">
+        <p class="text">
+            <span id="count">0</span> seats for <span id="movie">movie</span>
+        </p>
+        <p class="text">Total: $<span id="total">0</span></p>
+    </div>
 
     <script src="script.js"></script>
 </body>
