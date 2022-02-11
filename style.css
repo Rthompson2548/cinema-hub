@@ -21,6 +21,7 @@ label {
   margin-bottom: 10px !important;
 }
 
+
 p.text {
   margin-top: 5px;
 }
@@ -59,23 +60,10 @@ p.text span {
   margin-bottom: 10px;
 }
 
-/* select {
-  appearance:none;
-  -webkit-appearance: none;
-  background-color: transparent;
-  padding:10px;
-  margin:-5px -20px -5px -5px;
+select {
+  padding: 5px 8px;
+  border-radius: 5px;
 }
-
-.move-menu select option {
-  display: inline-block;
-}
-
-.movie-menu {
-  display:inline-block;
-  vertical-align:top;
-  overflow:hidden;
-} */
 
 .showcase {
   padding: 0 10px;
@@ -109,7 +97,7 @@ p.text span {
 }
 
 .occupied {
-  background-color: #36007e85;
+  background-color: #444451;
 }
 
 .selected {
@@ -120,23 +108,4 @@ p.text span {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-select {
-  appearance: none;
-  -webkit-appearance: none;
-  background-color: transparent;
-  border: 0;
-  padding:10px;
-  /* margin:-5px -20px -5px -5px; */
-}
-
-#movie-menu select option {
-  display:inline-block;
-}
-
-#movie-menu {
-  display:inline-block;
-  vertical-align:top;
-  overflow:hidden;
 }
