@@ -11,16 +11,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   font-family: "Lato", sans-serif;
-  margin: 0;
 }
 
 label {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
 }
+
 
 p.text {
   margin-top: 5px;
@@ -30,24 +30,20 @@ p.text span {
   color: rgb(255, 0, 242) !important;
 }
 
-.cinema-hub {
-  font-size: 52px;
+.header {
+  margin-top: 32px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  perspective: 1000px;
-  margin-bottom: 30px;
+  perspective: 950px;
 }
 
 .screen {
-  background-color: #fff;
-  height: 125px;
-  width: 100%;
-  padding: 100px 150px;
-  margin: 15px 0;
+  background-color: rgb(230, 230, 230);
+  padding: 75px 110px;
   border-radius: 3px;
   transform: rotateX(-45deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
@@ -70,10 +66,9 @@ select {
 }
 
 .showcase {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 5px 10px;
+  padding: 0 10px;
   border-radius: 5px;
-  color: #777;
+  color: #fff;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -92,9 +87,9 @@ select {
 
 .seat {
   background-color: #fff;
-  height: 12px;
-  width: 15px;
-  margin: 5px;
+  height: 10px;
+  width: 12px;
+  margin: 5px 7px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 2px;
