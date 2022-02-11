@@ -41,8 +41,8 @@ function populateUI() {
     seats.forEach((seat, index) => {
       /** checks if the returned index a positive number (means that it exists) */
       if (selectedSeats.indexOf(index) > -1) {
-        /** uses add() to save the seat's class into localStorage permanently */
-        // seat.classList.add("selected");
+        /** uses localStorage to permanently add the occupied class to the seat the user selected */
+        seat.classList.add("occupied");
       }
     })
   }
@@ -58,13 +58,6 @@ function populateUI() {
 };
 
 
-/** changes ticketPrice to the selected movie's ticket price */
-movieSelect.addEventListener("change", (event) => {
-  ticketPrice = +event.target.value;
-  setMovieData(event.target.selectedIndex, event.target.value);
-  updateOrder();
-})
-
 /** event handler for changing an unoccupied seat's class to `selected` if the user clicks on it */
 container.addEventListener('click', event => {
   if (
@@ -77,6 +70,17 @@ container.addEventListener('click', event => {
     updateOrder();
   }
 });
+
+
+/** changes ticketPrice to the selected movie's ticket price */
+movieSelect.addEventListener("change", (event) => {
+  ticketPrice = +event.target.value;
+  setMovieData(event.target.selectedIndex, event.target.value);
+  updateOrder();
+  // console.log("user has chosen a new movie")
+  
+})
+
 
 
 /** sets the initial user's count and total */
