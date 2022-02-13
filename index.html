@@ -10,131 +10,135 @@
 </head>
 
 <body>
-    <div class="movie-container">
-
-        <h1 class="header">Cinema Hub</h1>
-        <label class="featured-text">Featured</label>
-        <div>
-            <div class="featured-movie-images">
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2847210.jpg" alt="">
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp7665395.jpg" alt="">
-
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp5297073.jpg" alt="">
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2283499.jpg" alt="">
-            </div>
-
-            <div class="featured-movie-images">
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp6988384.jpg" alt="">
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp4119896.jpg" alt="">
-
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2900730.jpg" alt="">
-                <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp10473769.jpg" alt="">
-            </div>
-
-        </div>
-
-        
-        <label>Choose a Movie</label>
-        <h3 id="date"></h3>
-        <select id="movie">
-            <option value="10">Star Wars</option>
-            <option value="12">Pulp Fiction</option>
-            <option value="8">Avengers</option>
-            <option value="9">The Incredibles</option>
-            <option value="10">Spider-Man</option>
-            <option value="12">Psycho</option>
-            <option value="8">Jurassic Park</option>
-            <option value="9">Jaws</option>
-        </select>
+    <div id="confirm-order-message" class="order-message">
+        <h1>Order placed!</h1>
     </div>
+    <div id="cinema-hub">
+        <div class="movie-container">
 
-    <ul class="showcase">
-        <li>
-            <div class="seat"></div>
-            <small>Available</small>
-        </li>
-        <li>
-            <div class="seat selected"></div>
-            <small>Selected</small>
-        </li>
-        <li>
-            <div class="seat occupied"></div>
-            <small>Occupied</small>
-        </li>
-    </ul>
+            <h1 class="header">Cinema Hub</h1>
+            <label class="featured-text">Featured</label>
+            <div>
+                <div class="featured-movie-images">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2847210.jpg" alt="">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp7665395.jpg" alt="">
 
-    <div class="container">
-        <div class="screen"></div>
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp5297073.jpg" alt="">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2283499.jpg" alt="">
+                    </div>
 
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-        </div>
-        <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
+                <div class="featured-movie-images">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp6988384.jpg" alt="">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp4119896.jpg" alt="">
+
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2900730.jpg" alt="">
+                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp10473769.jpg" alt="">
+                    </div>
+
+            </div>
+            <label>Choose a Movie</label>
+            <h3 id="date"></h3>
+            <select id="movie">
+                <option value="10">Star Wars</option>
+                <option value="12">Pulp Fiction</option>
+                <option value="8">Avengers</option>
+                <option value="9">The Incredibles</option>
+                <option value="10">Spider-Man</option>
+                <option value="12">Psycho</option>
+                <option value="8">Jurassic Park</option>
+                <option value="9">Jaws</option>
+            </select>
+            </div>
+            
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>Available</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+            
+            <div class="container">
+                <div class="screen"></div>
+            
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                </div>
+            
+                <p class="text">
+                <h4 class="order-summary-text">Tickets:&nbsp<span id="count">0</span></h6>
+                    <h4 class="order-summary-text">Admission Fee: &nbsp $<span id="total">0</span></h4>
+                    </p>
+                <div class="unplaced-order">
+                    <button id="place-order" class="place-order-button">Place Order</button>
+                </div>
         </div>
 
-        <p class="text">
-        <h4 class="order-summary-text">Tickets:&nbsp<span id="count">0</span></h6>
-        <h4 class="order-summary-text">Admission Fee: &nbsp $<span id="total">0</span></h4>
-        </p>
     </div>
-
-
-
     <script src="script.js">
     </script>
 </body>

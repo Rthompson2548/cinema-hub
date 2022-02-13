@@ -5,6 +5,7 @@
 }
 
 body {
+  z-index: 2;
   background-color: #07033a;
   color: #fff;
   display: flex;
@@ -14,6 +15,17 @@ body {
   /* height: 90vh; */
   overflow-y: scroll;
   font-family: "Lato", sans-serif;
+}
+
+.order-message {
+  color: transparent;
+}
+
+.order-confirmation-message {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 label {
@@ -33,7 +45,7 @@ p.text span {
 
 .header {
   margin-top: 32px;
-  font-size: 60px;
+  font-size: 52px;
 }
 
 select {
@@ -49,7 +61,7 @@ select {
 }
 
 .featured-text {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .featured-movie-image {
@@ -135,6 +147,26 @@ select {
   font-size: 22px;
 }
 
+.placed-order {
+  background-color: green !important;
+  font-size: 100px !important;
+}
+
+.place-order-button {
+  background-color: red;
+  color: #fff;
+  padding: 12px 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 42px;
+  font-weight: bold;
+}
+
+.order-placed-button {
+  display: none;
+}
+
 @media (min-width: 500px) {
   .featured-movie-image {
     width: 250px;
@@ -156,5 +188,6 @@ select {
   .showcase li {
     margin: 0 25px;
   }
+
  
 }
