@@ -132,7 +132,7 @@ select {
 }
 
 .order-summary-text {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 @media (min-width: 500px) {

@@ -5,6 +5,13 @@ const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 
+/** displays the current date on the page */
+n = new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
 populateUI();
 
 let ticketPrice = +movieSelect.value;
@@ -12,7 +19,7 @@ let ticketPrice = +movieSelect.value;
 /** save the selected movie index & price */
 function setMovieData(movieIndex, moviePrice) {
   localStorage.setItem("selectedMovieIndex", movieIndex);
-  localStorage.setItem("selectedMoviePrice", moviePrice)
+  localStorage.setItem("selectedMoviePrice", moviePrice);
 }
 
 /** updates user's total number of tickets & cost */
@@ -75,10 +82,9 @@ container.addEventListener('click', event => {
 /** changes ticketPrice to the selected movie's ticket price */
 movieSelect.addEventListener("change", (event) => {
   ticketPrice = +event.target.value;
+  // window.location.reload();
   setMovieData(event.target.selectedIndex, event.target.value);
   updateOrder();
-  // console.log("user has chosen a new movie")
-  
 })
 
 
