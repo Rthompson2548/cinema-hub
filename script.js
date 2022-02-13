@@ -6,7 +6,8 @@ const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 const placeOrder = document.getElementById("place-order");
 const cinemaHub = document.getElementById("cinema-hub");
-const confirmationMessage = document.getElementById("confirm-order-message")
+const confirmationMessage = document.getElementById("confirm-order-message");
+const cinemaHubBody = document.getElementById("main-container");
 
 /** displays the current date on the page */
 n = new Date();
@@ -88,7 +89,8 @@ placeOrder.addEventListener("click", (event) => {
     event.target.classList.contains("place-order-button")) { 
     /** removes all other elements from page and just displays the confirmation message */
     cinemaHub.style.display = "none";
-    confirmationMessage.classList.toggle("order-confirmation-message")
+    cinemaHubBody.classList.toggle("order-confirmation-background");
+    confirmationMessage.classList.toggle("order-confirmation-message");
   }
 })
 
