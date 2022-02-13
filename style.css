@@ -53,8 +53,8 @@ select {
 }
 
 .featured-movie-image {
-  width: 125px;
-  height: 175px;
+  width: 125px !important;
+  height: 160px !important;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
@@ -131,9 +131,30 @@ select {
   align-items: center;
 }
 
-@media (min-width: 490px) {
+.order-summary-text {
+  font-size: 28px;
+}
+
+@media (min-width: 500px) {
   .featured-movie-image {
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
   }
+
+  .screen {
+    padding: 125px 200px;
+    transform: rotateX(-30deg);
+    margin: 20px 0;
+  }
+
+  .seat {
+    height: 20px;
+    width: 24px;
+    margin: 8px 12px;
+  }
+
+  .showcase li {
+    margin: 0 25px;
+  }
+ 
 }
