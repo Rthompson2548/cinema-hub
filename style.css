@@ -5,6 +5,7 @@
 }
 
 body {
+  letter-spacing: 1px; 
   z-index: 2;
   background-color: #07033a;
   color: #fff;
@@ -14,12 +15,10 @@ body {
   justify-content: center;
   /* height: 90vh; */
   overflow-y: scroll;
-  font-family: "Lato", sans-serif;
 }
 
 label {
   font-size: 32px;
-  font-weight: bold;
   margin-bottom: 20px !important;
   margin-top: 30px;
 }
@@ -35,6 +34,7 @@ p.text span {
 .header {
   margin-top: 32px;
   font-size: 52px;
+  
 }
 
 select {
@@ -52,6 +52,17 @@ select {
 .featured-text {
   font-size: 32px;
 }
+
+.normal-text {
+  font-family: 'Roboto', sans-serif;
+};
+
+
+.theater-text{
+  font-family: 'Limelight', cursive !important;
+  font-weight: bold;
+  font-size: 502px !important;
+};
 
 .featured-movie-image {
   width: 125px !important;
@@ -154,10 +165,6 @@ select {
 
 .order-message {
   color: transparent;
-}
-
-.order-confirmation-background {
- 
 }
 
 .order-confirmation-message {
