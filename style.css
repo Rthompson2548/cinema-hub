@@ -12,9 +12,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   /* height: 90vh; */
   overflow-y: scroll;
+    font-family: 'Inter';
+
 }
 
 label {
@@ -38,8 +39,10 @@ p.text span {
 }
 
 select {
-  padding: 5px 8px;
+  padding: 8px 0px 8px 8px;
   border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .container {
@@ -49,39 +52,33 @@ select {
   perspective: 950px;
 }
 
-.featured-text {
-  font-size: 32px;
-}
 
 .normal-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter';
+  font-size: 24px;
 };
 
+.smaller-text {
+  font-size: 14px;
+}
 
 .theater-text{
   font-family: 'Limelight', cursive !important;
   font-weight: bold;
-  font-size: 502px !important;
+  font-size: 52px !important;
 };
 
-.featured-movie-image {
-  width: 125px !important;
-  height: 160px !important;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
-}
 
 .featured-movie-images {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 20px;
 }
 
 .screen {
   background-color: rgb(230, 230, 230);
-  padding: 75px 110px;
+  padding: 110px 150px;
   border-radius: 3px;
   transform: rotateX(-45deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
@@ -109,9 +106,7 @@ select {
 
 .showcase li {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
+  /* justify-content: center; */
 }
 
 .row {
@@ -120,16 +115,29 @@ select {
 
 .seat {
   background-color: #fff;
-  height: 10px;
-  width: 12px;
-  margin: 5px 7px;
+  height: 18px;
+  width: 20px;
+  margin: 8px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
+.showcase-seat {
+  background-color: #fff;
+  height: 18px;
+  width: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
 .occupied {
+  display: flex;
   background-color: #444451;
 }
 
@@ -144,7 +152,7 @@ select {
 }
 
 .order-summary-text {
-  font-size: 22px;
+  font-size: 18px;
   margin: 5px 0;
 }
 
@@ -160,7 +168,7 @@ select {
 }
 
 .order-placed-button {
-  display: none;
+  visibility: hidden;
 }
 
 .order-message {
@@ -180,26 +188,15 @@ select {
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7) !important;
 }
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) { */
   .featured-movie-image {
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 275px;
+    padding: 12px;
+    border-radius: 16px;
   }
 
-  .screen {
-    padding: 125px 200px;
-    transform: rotateX(-30deg);
-    margin: 20px 0;
-  }
 
-  .seat {
-    height: 20px;
-    width: 24px;
-    margin: 8px 12px;
-  }
-
-  .showcase li {
-    margin: 0 25px;
-  }
+  
  
-}
+/* } */

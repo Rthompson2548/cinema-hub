@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Limelight&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Limelight&display=swap" rel="stylesheet">
     <title>Cinema Hub</title>
 </head>
 
@@ -17,28 +16,32 @@
     <div id="cinema-hub">
         <div class="movie-container">
 
-            <h1 style="font-family: 'Limelight', cursive; font-size: 80px;">Cinema Hub</h1>
-            <label class="featured-text normal-text">Featured</label>
+            <h1 style="font-family: 'Limelight', cursive; font-size: 56px;">Cinema Hub</h1>
+            <label class="normal-text">Featured</label>
             <div>
                 <div class="featured-movie-images">
                     <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2847210.jpg" alt="">
                     <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp7665395.jpg" alt="">
-
-                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp5297073.jpg" alt="">
-                    <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2283499.jpg" alt="">
-                    </div>
+                </div>
+                    
+                <div class="featured-movie-images">
+                        <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp5297073.jpg" alt="">
+                        <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2283499.jpg" alt="">
+                        </div>
 
                 <div class="featured-movie-images">
                     <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp6988384.jpg" alt="">
                     <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp4119896.jpg" alt="">
-
+                </div>
+                
+                <div class="featured-movie-images">
                     <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp2900730.jpg" alt="">
                     <img class="featured-movie-image" src="https://wallpapercave.com/wp/wp10473769.jpg" alt="">
                     </div>
 
             </div>
             <label class="normal-text">Choose a Movie</label>
-            <h3 id="date" class="normal-text"></h3>
+            <h3 id="date" class="smaller-text"></h3>
             <select id="movie">
                 <option value="10">Star Wars</option>
                 <option value="12">Pulp Fiction</option>
@@ -51,18 +54,18 @@
             </select>
             </div>
             
-            <ul class="showcase normal-text">
+            <ul class="showcase">
                 <li>
-                    <div class="seat"></div>
-                    <small>Available</small>
+                    <div class="showcase-seat"></div>
+                    <h6>Available</h6>
                 </li>
                 <li>
-                    <div class="seat selected"></div>
-                    <small>Selected</small>
+                    <div class="showcase-seat selected"></div>
+                    <h6>Selected</h6>
                 </li>
                 <li>
-                    <div class="seat occupied"></div>
-                    <small>Occupied</small>
+                    <div class="showcase-seat occupied"></div>
+                    <h6>Occupied</h6>
                 </li>
             </ul>
             
