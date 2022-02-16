@@ -13,6 +13,8 @@ const cinemaHubBody = document.getElementById("main-container");
 const colorMode = document.getElementById("color-mode");
 const colorModeButton = document.getElementById("color-mode-button");
 const seatGuide = document.getElementById("showcase");
+const closeOrderMessageButton = document.getElementById("close-order-message");
+const confirmationMessageContainer = document.getElementById("confirm-order-message");
   
 /** displays the current date on the page */
 n = new Date();
@@ -93,7 +95,7 @@ placeOrder.addEventListener("click", (event) => {
   if (
     event.target.classList.contains("place-order-button")) { 
     /** removes all other elements from page and just displays the confirmation message */
-    cinemaHub.style.display = "none";
+    cinemaHub.classList.toggle("hidden");
     cinemaHubBody.classList.toggle("order-confirmation-background");
     confirmationMessage.classList.toggle("order-confirmation-message");
   }
@@ -115,6 +117,13 @@ colorMode.addEventListener("click", (event) => {
   seatGuideText.classList.toggle("showcase-text");
 })
 
+
+closeOrderMessageButton.addEventListener("click", (event) => {
+  /** removes confirmation message from screen and displays blank page */
+  confirmationMessage.style.display = "none";
+  /** removes the `hidden` class from the page body to re-display home page */
+  cinemaHub.classList.toggle("hidden");
+})
 
 /** sets the initial user's count and total */
 updateOrder();

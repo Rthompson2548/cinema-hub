@@ -34,6 +34,10 @@ body {
     inset: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 
 label {
   font-size: 32px;
