@@ -116,6 +116,7 @@ movieSelect.addEventListener("change", (event) => {
 colorMode.addEventListener("click", (event) => {
   /** renders light mode when the light mode button is clicked */
   cinemaHubBody.classList.toggle("light-mode");
+  svg.classList.toggle("light")
   seat.classList.toggle("available");
   seatGuideText.classList.toggle("showcase-text");
 })
@@ -125,7 +126,7 @@ closeOrderMessageButton.addEventListener("click", (event) => {
   /** removes confirmation message from screen and displays blank page */
   confirmationMessage.style.display = "none";
   /** removes the `hidden` class from the page body to re-display home page */
-  cinemaHub.classList.toggle("hidden");
+  cinemaHub.classList.toggle("");
 });
 
 darkModeIcon.addEventListener("click", (event) => {
