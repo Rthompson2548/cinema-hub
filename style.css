@@ -104,9 +104,9 @@ select {
 }
 
   .featured-movie-image {
-    width: 200px;
-    height: 275px;
-    padding: 12px;
+    width: 300px;
+    height: 425px;
+    padding: 16px;
     border-radius: 16px;
   }
 
