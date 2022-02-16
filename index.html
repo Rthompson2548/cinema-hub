@@ -9,14 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Cinema Hub</title>
 </head>
 
+<div id="color-mode" class="color-mode">
+    <button id="color-mode" class="color-mode"">
+        <svg xmlns=" http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172"
+        style=" fill:#000000;">
+        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+            font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="#ffffff"></path>
+            <g fill="#000000">
+                <path
+                    d="M168.30469,104.96162c-10.72628,34.18292 -42.65734,58.98391 -80.38121,58.98391c-46.51804,-0.0001 -84.22816,-37.71029 -84.22816,-84.22827c-0.01528,-29.19964 15.10359,-56.3212 39.94828,-71.66269c-2.55789,8.17037 -3.85517,16.68296 -3.84712,25.24436c0,46.51804 37.71029,84.22816 84.22816,84.22816c15.64347,0.02618 30.98202,-4.32648 44.28006,-12.56547z">
+                </path>
+            </g>
+        </g>
+        </svg>
+    </button>
+</div>
 <body id="main-container">
+
     <div id="cinema-hub">
         <div class="movie-container">
-
-            <h1 style="font-family: 'Limelight', cursive; font-size: 56px;">Cinema Hub</h1>
+            
+            <h1 style="font-family: 'Limelight', cursive; font-size: 36px;">Cinema Hub</h1>
             <label class="normal-text">Featured</label>
             <div>
                 <div class="featured-movie-images">
@@ -56,16 +76,16 @@
             
             <ul class="showcase">
                 <li>
-                    <div class="showcase-seat"></div>
-                    <h6>Available</h6>
+                    <div class="showcase-seat available"></div>
+                    <h6 id="showcase-text">Available</h6>
                 </li>
                 <li>
                     <div class="showcase-seat selected"></div>
-                    <h6>Selected</h6>
+                    <h6 id="showcase-text">Selected</h6>
                 </li>
                 <li>
                     <div class="showcase-seat occupied"></div>
-                    <h6>Occupied</h6>
+                    <h6 id="showcase-text">Occupied</h6>
                 </li>
             </ul>
             
@@ -73,64 +93,64 @@
                 <div class="screen"></div>
             
                 <div class="row">
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
+                    <div id="seat" class="seat "></div>
                 </div>
                 <div class="row">
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
                 </div>
                 <div class="row">
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat occupied"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
                 </div>
                 <div class="row">
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
                 </div>
                 <div class="row">
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
                 </div>
                 <div class="row">
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat occupied"></div>
-                    <div class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat occupied"></div>
+                    <div id="seat" class="seat"></div>
                 </div>
             
                 <p class="text">
@@ -145,8 +165,8 @@
 
     </div>
     <div id="confirm-order-message" class="order-message normal-text">
-        <h1>Order placed successfully</h1>
-        <h3>Enjoy the show!</h3>
+        <h2>Order placed successfully</h2>
+        <h4>Enjoy the show!</h4>
         <!-- <p class="text">
         <h4 class="order-summary-text">Tickets:&nbsp<span id="count">0</span></h6>
             <h4 class="order-summary-text">Admission Fee: &nbsp $<span id="total">0</span></h4>

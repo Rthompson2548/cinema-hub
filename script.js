@@ -1,14 +1,19 @@
 const container = document.querySelector(".container");
 /** `:not(.occupied)` => only creates a node list of all seats without occupied class */
 const seats = document.querySelectorAll(".row .seat:not(.occupied)");
+const seat = document.getElementById("row-seat");
 const count = document.getElementById("count");
+const seatGuideText = document.getElementById("seat-guide-text");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 const placeOrder = document.getElementById("place-order");
 const cinemaHub = document.getElementById("cinema-hub");
 const confirmationMessage = document.getElementById("confirm-order-message");
 const cinemaHubBody = document.getElementById("main-container");
-
+const colorMode = document.getElementById("color-mode");
+const colorModeButton = document.getElementById("color-mode-button");
+const seatGuide = document.getElementById("showcase");
+  
 /** displays the current date on the page */
 n = new Date();
 y = n.getFullYear();
@@ -101,8 +106,14 @@ movieSelect.addEventListener("change", (event) => {
   window.location.reload();
   setMovieData(event.target.selectedIndex, event.target.value);
   updateOrder();
-})
+});
 
+
+colorMode.addEventListener("click", (event) => {
+  cinemaHubBody.classList.toggle("light-mode");
+  seat.classList.toggle("available");
+  seatGuideText.classList.toggle("showcase-text");
+})
 
 
 /** sets the initial user's count and total */

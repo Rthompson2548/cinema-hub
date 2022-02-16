@@ -9,14 +9,31 @@ body {
   z-index: 2;
   background-color: #07033a;
   color: #fff;
+  overflow-y: scroll;
+  font-family: 'Inter';
+
+}
+
+.cinema-hub {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 90vh; */
-  overflow-y: scroll;
-    font-family: 'Inter';
-
 }
+
+.color-mode {
+  text-align: end !important;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.moon{
+    position: absolute;
+    inset: 0;
+}
+
 
 label {
   font-size: 32px;
@@ -77,11 +94,11 @@ select {
 }
 
 .screen {
-  background-color: rgb(230, 230, 230);
+  background-color: #fff;
   padding: 110px 150px;
   border-radius: 3px;
   transform: rotateX(-45deg);
-  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 2px 2px 2px rgba(214, 214, 214, 0.7);
 }
 
 .movie-container {
@@ -98,7 +115,6 @@ select {
 .showcase {
   padding: 0 10px;
   border-radius: 5px;
-  color: #fff;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -106,7 +122,8 @@ select {
 
 .showcase li {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
+  margin: 0px 20px;
 }
 
 .row {
@@ -114,7 +131,8 @@ select {
 }
 
 .seat {
-  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px rgb(212, 212, 212);
+  background-color: rgb(255, 255, 255);
   height: 18px;
   width: 20px;
   margin: 8px;
@@ -125,23 +143,36 @@ select {
 }
 
 .showcase-seat {
+  display: flex;
   background-color: #fff;
-  height: 18px;
-  width: 20px;
+  height: 16px;
+  width: 18px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-right: 10px;
+}
+
+.showcase-text {
+  color: #fff;
 }
 
 .occupied {
   display: flex;
-  background-color: #444451;
+  background-color: #474747;
+  opacity: 0.75;
+  box-shadow: none !important;
+  box-shadow: 1px 1px 1px #474747 !important;
 }
 
-.selected {
+.available {
+  background-color: gray;
+}
+
+.selected {  
+  box-shadow: 1px 1px 1px #D2042D !important;
   background-color: #D2042D;
 }
 
