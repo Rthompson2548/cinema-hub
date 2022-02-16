@@ -22,6 +22,8 @@ body {
 
 .color-mode {
   text-align: end !important;
+  background-color: transparent;
+  border: none;
 }
 
 .light-mode {
@@ -97,6 +99,13 @@ select {
   margin: 20px;
 }
 
+  .featured-movie-image {
+    width: 200px;
+    height: 275px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
 .screen {
   background-color: #fff;
   padding: 110px 150px;
@@ -121,7 +130,7 @@ select {
   border-radius: 5px;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .showcase li {
@@ -224,12 +233,7 @@ select {
 }
 
 /* @media (min-width: 500px) { */
-  .featured-movie-image {
-    width: 200px;
-    height: 275px;
-    padding: 12px;
-    border-radius: 16px;
-  }
+
 
 
   
