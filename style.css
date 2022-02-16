@@ -20,11 +20,14 @@ body {
   align-items: center;
 }
 
-.color-mode {
+.light-mode {
   text-align: end !important;
   background-color: transparent;
   border: none;
-  
+}
+
+.light-mode-button {
+  margin: 5px;
 }
 
 .light-mode {

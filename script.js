@@ -10,8 +10,8 @@ const placeOrder = document.getElementById("place-order");
 const cinemaHub = document.getElementById("cinema-hub");
 const confirmationMessage = document.getElementById("confirm-order-message");
 const cinemaHubBody = document.getElementById("main-container");
-const colorMode = document.getElementById("color-mode");
-const colorModeButton = document.getElementById("color-mode-button");
+const lightMode = document.getElementById("light-mode");
+const darkMode = document.getElementById("dark-mode");
 const seatGuide = document.getElementById("showcase");
 const closeOrderMessageButton = document.getElementById("close-order-message");
 const confirmationMessageContainer = document.getElementById("confirm-order-message");
@@ -111,12 +111,15 @@ movieSelect.addEventListener("change", (event) => {
 });
 
 
-colorMode.addEventListener("click", (event) => {
+lightMode.addEventListener("click", (event) => {
   cinemaHubBody.classList.toggle("light-mode");
   seat.classList.toggle("available");
   seatGuideText.classList.toggle("showcase-text");
 })
 
+darkMode.addEventListener("click", (event) => {
+  cinemaHubBody.classList.toggle("dark-mode");
+})
 
 closeOrderMessageButton.addEventListener("click", (event) => {
   /** removes confirmation message from screen and displays blank page */
