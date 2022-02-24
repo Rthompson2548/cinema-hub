@@ -1,12 +1,19 @@
-## Cinema Hub
+# Cinema Hub
 
-Display movie choices and seats in a theater to select from in order to purchase tickets
+![movie-booker-app-img](https://user-images.githubusercontent.com/80596387/155622621-fb3244a1-ae94-4fec-832a-b1689474ecbd.PNG)
 
-## Project Specifications
+## Deployed Application
+http://movie-theatre-booking-app.vercel.app/
 
-- Display UI with movie select, screen, seats, legend & seat info
-- User can select a movie/price
-- User can select/deselect seats
-- User can not select occupied seats
-- Number of seats and price will update
+## Features
+Vanilla JavaScript application that allows users to
+- Select from a list of movies
+- View open and reserved seats
+- Select and deselect seat(s)
 - Save seats, movie and price to local storage so that UI is still populated on refresh
+
+## Technologies
+- JavaScript
+- CSS
+- HTML
+- Vercel
